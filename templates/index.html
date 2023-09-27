@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(81, 83, 137) ;
+        }
+        h1 {
+            background-color: cadetblue;
+            height: fit-content;
+        }
+        h2 {
+            background-color: rgb(219, 226, 226);
+            color: rgb(24, 17, 4);
+        }
+        h4 {
+            color: rgb(23, 12, 5);
+        }    
+        
+     
+    </style>
+</head>
+
+<body>
+    <img src="static/uploads/logo.jpg" width="1250", height="250">
+
+    </div>
+    <h1>Welcome to A Simple Calculator Page!</h1>
+    <br>         
+            <h2>Web Calculator</h2>
+            <p><h4>You can try our web Calculator for simple computation</h4></p>
+        
+    <form action="{{('/calculate')}}", method="post">
+                    
+                <input type="number" name="firstNumber" class="form-control" placeholder="Insert First Number"><br>
+                    <select id="SelectOperation" class="form-control" name="operation">
+                        <option value="">Select...</option>
+                        <option value="plus">+</option>
+                        <option value="minus">-</option>
+                        <option value="multiply">x</option>
+                        <option value="divide">/</option>
+                    </select><br>
+             
+                <input type="number" name="secondNumber" placeholder="Insert Second Number"><br>
+                <input type="submit" value="calculate"><label><br>=</label><br>
+                <input type="text" class="form-control" placeholder="Result" value="{{result}}">
+            
+  
+       
+    </form><br>
+    <img src="static/uploads/Home.png" width="1250", width="250">
+</body>
+</html>
