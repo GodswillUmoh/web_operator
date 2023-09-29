@@ -5,7 +5,6 @@ app = Flask(__name__)
 @app.route("/")
 def main():
   return render_template("index.html")
-
 @app.route("/calculate", methods = ["post"])
 def calculate():
   first_number =int(request.form["firstNumber"])
